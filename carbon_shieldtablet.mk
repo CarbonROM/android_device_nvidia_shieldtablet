@@ -7,3 +7,6 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 
 PRODUCT_NAME := carbon_shieldtablet
 PRODUCT_DEVICE := shieldtablet
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carbon.maintainer="Joel_Maxuel"
