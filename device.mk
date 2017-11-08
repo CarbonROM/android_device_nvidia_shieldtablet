@@ -115,3 +115,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += rild
 
 $(call inherit-product, device/nvidia/shield-common/shield.mk)
+
+# Only set if framework modifications for nvcpl and shieldtech are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS := FALSE
+
+# Only set if framework modifications for blakepairing are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS_BLAKE := FALSE
