@@ -24,6 +24,12 @@ TARGET_TEGRA_VERSION := t124
 TARGET_TEGRA_MODEM := icera
 TARGET_TEGRA_TOUCH := raydium
 
+# Only set if framework modifications for nvcpl and shieldtech are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS := FALSE
+
+# Only set if framework modifications for blakepairing are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS_BLAKE := FALSE
+
 $(call inherit-product, device/nvidia/shield-common/shield.mk)
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -133,9 +139,3 @@ PRODUCT_PACKAGES += rild
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
-
-# Only set if framework modifications for nvcpl and shieldtech are available.
-NV_ANDROID_FRAMEWORK_ENHANCEMENTS := FALSE
-
-# Only set if framework modifications for blakepairing are available.
-NV_ANDROID_FRAMEWORK_ENHANCEMENTS_BLAKE := FALSE
