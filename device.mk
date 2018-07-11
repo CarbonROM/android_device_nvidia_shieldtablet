@@ -128,6 +128,11 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     lights.tegra
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/thermal/thermalhal.loki.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalhal.loki.xml \
+    $(LOCAL_PATH)/thermal/thermalhal.tn8.xml:$(TARGET_COPY_OUT_VENDOR)/etc/thermalhal.tn8.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     charger \
