@@ -1,13 +1,13 @@
 [
  {
-   "repository": "LineageOS/android_device_nvidia_shield-common",
+   "repository": "CarbonROM/android_device_nvidia_shield-common",
    "target_path": "device/nvidia/shield-common",
-   "revision": "lineage-15.1"
+   "revision": "cr-6.1"
  },
  {
-   "repository": "LineageOS/android_kernel_nvidia_shield",
+   "repository": "CarbonROM/android_kernel_nvidia_shieldtablet",
    "target_path": "kernel/nvidia/shield",
-   "revision": "lineage-15.1"
+   "revision": "cr-6.1"
  },
  {
    "repository": "LineageOS/android_hardware_nvidia_libstagefrighthw",
